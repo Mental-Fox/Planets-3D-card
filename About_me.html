@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>About me</title>
+</head>
+<body>
+
+	<main>
+
+		<div class="main__block" data-relative-input="true" id="parallax" >
+			<div class="element__block"  data-depth="0.6" >
+				<div class="element__block__text" >
+					<div class="p">-Welcome-</div>
+						<p>to my site</p>
+				</div>
+				<nav>
+					<ul class="navigation">
+						<li><a href="index.html">Home </a></li>
+						<li><a href="About_me.html">About me</a></li>
+					
+					</ul>
+				</nav>
+
+				<div class="main__block2">
+					<div class="element__block2" >
+						<div class="element__block__text2 desc__p" >
+							<p class="desc">"Hi, my name is Nikolai I am 22 years old.
+								 I am a novice web developer trying to make different websites and web-interfaces" </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+		 <script id="vertexShader" type="x-shader/x-vertex">
+			varying vec3 vNormal;
+				void main() 
+				{
+					 vNormal = normalize( normalMatrix * normal );
+					 gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+				}
+				</script>
+
+			<script id="fragmentShader" type="x-shader/x-vertex">
+			varying vec3 vNormal;
+				void main() 
+				{
+					float intensity = pow( 0.7 - dot( vNormal, vec3( 0.0, 0.0, .6 ) ), 9.0 ); 
+					 gl_FragColor = vec4( 1.8, 1.0, 3.0, .8 ) * intensity;
+				}
+				</script>
+		<div id="wrapper">
+			<script src="js/three.js"></script>	
+			<script src="js/main.js"></script>
+			<canvas id="3d__earth" width="100" height="100"></canvas>
+		</div>
+
+
+		
+
+		<div class="github">
+			<a href="https://github.com/Mental-Fox" class="git"><img src="/img/git.png" width="30" height="30" alt=""></a>
+	 </div>
+
+	</main>
+			
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script>
+		var scene = document.getElementsByClass('cards');
+		var parallaxInstance = new Parallax(scene, {
+		relativeInput: true
+	});
+	</script>
+</body>
+</html>

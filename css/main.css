@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+
+@font-face {
+	font-family: "Mandhor";
+	src: url("/css/Mandhor-ALEmp.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "BlackShadow";
+	src: url("/css/BlackShadow-w1W83.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/8b637e47143071.5871c47d7b9f4.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.element__block {
+	background: rgba(9, 8, 41, 0.19);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	width: 850px;
+	height: 900px;
+	z-index: 500;
+
+}
+
+.element__block2 {
+	width: 650px;
+	height: 250px;
+	z-index: 500;
+	background: rgba(31, 8, 41, 0.19);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(11.1px);
+	margin-left: 100px;
+
+	margin-top: 0px;
+	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
+}
+
+.main__block,
+.main__block2 {
+	margin: 0 auto;
+
+}
+
+
+p {
+	font-family: Mandhor, sans-serif;
+	font-weight: 400;
+	font-size: 45px;
+}
+
+.element__block__text {
+	text-align: center;
+	position: relative;
+	padding-top: 50px;
+	font-family: Mandhor, sans-serif;
+	font-weight: 400;
+	font-size: 88px;
+	-webkit-transform: translateZ(-50px) scale(1);
+	transform: translateZ(-50px) scale(1.2);
+	width: 100%;
+	transition: all 0.4s linear;
+}
+
+.element__block__text2 p {
+	text-align: center;
+	position: relative;
+	padding: 50px;
+	font-family: Mandhor, sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.element__block__text:hover {
+	transform: translateZ(-50px) scale(1.1);
+	transition: all 0.4s linear;
+	text-shadow: 0px 35px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+canvas {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: -99999;
+}
+
+
+.cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.card {
+	background: rgba(31, 8, 41, 0.19);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	width: 200px;
+	height: 140px;
+	margin: 30px;
+	margin-top: -45%;
+	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+	width: 200px;
+	height: 160px;
+}
+
+
+/*------------------------------------------------------*/
+
+
+.github {
+	font-size: 18px;
+	text-align: center;
+	margin-top: -8%;
+}
+
+/* Icons */
+
+.git {
+	color: #fff;
+	background: #382d32;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	font-family: fontawesome;
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding-top: 12px;
+	margin: 0 2px;
+	-o-transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+	-webkit-font-smoothing: antialiased;
+}
+
+.git:hover,
+.card:hover {
+	background: #911e3b;
+	box-shadow: 0px 0px 30px #911e3b;
+
+}
+
+.card:hover {
+	background: #911e3b;
+	box-shadow: 0px 23px 0px 0px #911e3b;
+	border-radius: 0%;
+}
+
+/* pop-up text */
+
+.git span {
+	color: #666;
+	position: absolute;
+	font-family: sans-serif;
+	bottom: 0;
+	left: -25px;
+	right: -25px;
+	padding: 5px 7px;
+	z-index: -1;
+	font-size: 14px;
+	border-radius: 2px;
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	-o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	font-family: 'Rubik', sans-serif;
+
+}
+
+.navigation li {
+	font-size: 28px;
+	padding: 15px;
+	list-style: none;
+	font-family: 'BlackShadow', sans-serif;
+
+}
+
+.navigation a {
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 400;
+	color: #8185be;
+	font-family: monospace;
+	font-family: 'BlackShadow', sans-serif;
+	text-shadow: 10px 10px 5px rgba(0, 0, 0, .5), 20px 20px 20px rgba(0, 0, 0, .4), 30px 30px 30px rgba(0, 0, 0, .1);
+	text-transform: Uppercase;
+
+}
+
+.navigation a:hover {
+	color: #ceced3;
+}
+
+.desc__p p {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
+	font-size: 34px;
+}
