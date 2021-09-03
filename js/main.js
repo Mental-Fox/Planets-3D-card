@@ -37,7 +37,7 @@
 			var material = new THREE.MeshPhongMaterial({
 				map: texture,
 				bumpMap: bumpMap,
-				bumpScale: 0.01,
+				bumpScale: 0.02,
 	
 				//emissive: (new THREE.Color(0xFFFFFF), new THREE.Color(0xE7E896)),
 				//emissiveMap: lights,
