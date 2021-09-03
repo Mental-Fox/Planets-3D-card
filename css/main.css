@@ -1,18 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
-
-@font-face {
-	font-family: "Mandhor";
-	src: url("/css/Mandhor-ALEmp.otf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "BlackShadow";
-	src: url("/css/BlackShadow-w1W83.otf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Sue+Ellen+Francisco&family=Unica+One&display=swap');
 
 * {
 	margin: 0;
@@ -28,6 +16,7 @@ body {
 	background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/8b637e47143071.5871c47d7b9f4.jpg');
 	background-position: center;
 	background-size: cover;
+
 }
 
 .element__block {
@@ -65,7 +54,7 @@ body {
 
 
 p {
-	font-family: Mandhor, sans-serif;
+	font-family: 'Permanent Marker', cursive;
 	font-weight: 400;
 	font-size: 45px;
 }
@@ -74,7 +63,7 @@ p {
 	text-align: center;
 	position: relative;
 	padding-top: 50px;
-	font-family: Mandhor, sans-serif;
+	font-family: 'Permanent Marker', cursive;
 	font-weight: 400;
 	font-size: 88px;
 	-webkit-transform: translateZ(-50px) scale(1);
@@ -87,7 +76,7 @@ p {
 	text-align: center;
 	position: relative;
 	padding: 50px;
-	font-family: Mandhor, sans-serif;
+	font-family: 'Permanent Marker', cursive;
 	font-weight: 400;
 	font-size: 30px;
 }
@@ -126,7 +115,7 @@ canvas {
 	width: 200px;
 	height: 140px;
 	margin: 30px;
-	margin-top: -45%;
+	margin-top: -38%;
 	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
 }
 
@@ -153,7 +142,7 @@ canvas {
 	border-radius: 4px;
 	text-align: center;
 	text-decoration: none;
-	font-family: fontawesome;
+	font-family: 'Permanent Marker', cursive;
 	position: relative;
 	display: inline-block;
 	width: 50px;
@@ -206,16 +195,12 @@ canvas {
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
-	font-family: 'Rubik', sans-serif;
-
 }
 
 .navigation li {
 	font-size: 28px;
 	padding: 15px;
 	list-style: none;
-	font-family: 'BlackShadow', sans-serif;
-
 }
 
 .navigation a {
@@ -224,7 +209,7 @@ canvas {
 	font-weight: 400;
 	color: #8185be;
 	font-family: monospace;
-	font-family: 'BlackShadow', sans-serif;
+	font-family: 'Permanent Marker', cursive;
 	text-shadow: 10px 10px 5px rgba(0, 0, 0, .5), 20px 20px 20px rgba(0, 0, 0, .4), 30px 30px 30px rgba(0, 0, 0, .1);
 	text-transform: Uppercase;
 
@@ -234,8 +219,8 @@ canvas {
 	color: #ceced3;
 }
 
-.desc__p p {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-weight: 700;
-	font-size: 34px;
+.element__block__text2 p {
+	font-family: 'Hi Melody', cursive;
+	font-weight: 900;
+	font-size: 38px;
 }
